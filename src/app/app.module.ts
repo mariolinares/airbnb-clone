@@ -9,6 +9,10 @@ import { FooterComponent } from './core/components/footer/footer.component';
 import { HeaderComponent } from './core/components/header/header.component';
 import { LayoutComponent } from './core/components/layout/layout.component';
 import { SearchComponent } from './core/components/search/search.component';
+import { AlojamientoComponent } from './core/components/alojamiento/alojamiento.component';
+import { ExperienciaOnlineComponent } from './core/components/experiencia-online/experiencia-online.component';
+import { ExperienciaComponent } from './core/components/experiencia/experiencia.component';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +23,9 @@ import { SearchComponent } from './core/components/search/search.component';
     LayoutComponent,
     AirbnbCardComponent,
     FooterComponent,
+    ExperienciaOnlineComponent,
+    ExperienciaComponent,
+    AlojamientoComponent,
   ],
   imports: [
     BrowserModule,
