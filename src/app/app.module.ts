@@ -12,6 +12,7 @@ import { SearchComponent } from './core/components/search/search.component';
 import { AlojamientoComponent } from './core/components/alojamiento/alojamiento.component';
 import { ExperienciaOnlineComponent } from './core/components/experiencia-online/experiencia-online.component';
 import { ExperienciaComponent } from './core/components/experiencia/experiencia.component';
+import { HomeComponent } from './core/components/home/home.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ExperienciaComponent } from './core/components/experiencia/experiencia.
     ExperienciaOnlineComponent,
     ExperienciaComponent,
     AlojamientoComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
