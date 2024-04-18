@@ -1,30 +1,34 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AlojamientoComponent } from './core/components/alojamiento/alojamiento.component';
-import { ExperienciaOnlineComponent } from './core/components/experiencia-online/experiencia-online.component';
-import { ExperienciaComponent } from './core/components/experiencia/experiencia.component';
 import { HomeComponent } from './core/components/home/home.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent,
-  },
-  {
-    path: 'alojamiento',
-    component: AlojamientoComponent,
-  },
-  {
-    path: 'experiencia',
-    component: ExperienciaComponent,
-  },
-  {
-    path: 'experiencia-online',
-    component: ExperienciaOnlineComponent,
-  },
-  {
-    path: '**',
-    redirectTo: 'home',
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./pages/alojamiento/alojamiento.module').then(
+            (m) => m.AlojamientoModule
+          ),
+      },
+      {
+        path: 'experiencia',
+        loadChildren: () =>
+          import('./pages/experiencia/experiencia.module').then(
+            (m) => m.ExperienciaModule
+          ),
+      },
+      {
+        path: 'experiencia-online',
+        loadChildren: () =>
+          import('./pages/experiencia-online/experiencia-online.module').then(
+            (m) => m.ExperienciaOnlineModule
+          ),
+      },
+    ],
   },
 ];
 
