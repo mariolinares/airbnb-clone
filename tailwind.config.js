@@ -24,6 +24,9 @@ module.exports = {
           serif: ["Merriweather", "serif"],
         },
         extend: {
+          backgroundColor: {
+            "multiselect-option": "red-200",
+          },
           spacing: {
             128: "32rem",
             144: "36rem",
