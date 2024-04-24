@@ -8,6 +8,7 @@ import { CategoriesMenuComponent } from './core/components/categories-menu/categ
 import { FooterComponent } from './core/components/footer/footer.component';
 import { HeaderComponent } from './core/components/header/header.component';
 import { HomeComponent } from './core/components/home/home.component';
+import { IconsFilterComponent } from './core/components/icons-filter/icons-filter.component';
 import { LayoutComponent } from './core/components/layout/layout.component';
 import { SearchComponent } from './core/components/search/search.component';
 import { AlojamientoComponent } from './pages/alojamiento/alojamiento.component';
@@ -27,6 +28,7 @@ import { ExperienciaComponent } from './pages/experiencia/experiencia.component'
     ExperienciaComponent,
     AlojamientoComponent,
     HomeComponent,
+    IconsFilterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
