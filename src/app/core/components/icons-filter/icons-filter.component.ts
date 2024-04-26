@@ -17,6 +17,7 @@ export class IconsFilterComponent implements OnInit {
 
   ngOnInit(): void {
     this.getIconsFilter();
+    
   }
 
   getIconsFilter() {
@@ -24,5 +25,14 @@ export class IconsFilterComponent implements OnInit {
       .getAllIconFilters()
       .pipe(tap(console.log))
       .subscribe((icons) => (icons = this.iconsFilters = icons));
+  }
+
+  addIconsFilter() {
+    const img = {
+      name: 'prueba',
+      title: 'prueba',
+      alt: 'prueba',
+    };
+    this.iconFilterService.addIconFilter(img).subscribe(res => console.log(res));
   }
 }

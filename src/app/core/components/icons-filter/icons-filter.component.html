@@ -1,7 +1,19 @@
 <div class="container__icons-filter">
   <div class="container__icons-filter-content">
-    <div class="container__icons-filter-content-icon">
-      <a href="*"> </a>
+    <div
+      *ngFor="let icon of iconsFilters; index as i"
+      class="container__icons-filter-content-icon"
+    >
+      <a href="/">
+        {{ icon.name }}
+
+        <img
+          src="/assets/images/img_{{ i + 1 }}.jpeg"
+          [alt]="icon.alt"
+          [title]="icon.title"
+        />
+      </a>
+      <!-- <button (click)="addIconsFilter()">agregar imagen</button> -->
     </div>
   </div>
 </div>

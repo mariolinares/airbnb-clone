@@ -11,7 +11,13 @@ export class IconFilterService {
 
   getAllIconFilters(): Observable<Array<IconsFilters>> {
     return this._httpClient.get<Array<IconsFilters>>(
-      './../../../assets/imgsFilters.json'
+      '/assets/imgsFilters.json'
     );
+  }
+
+  addIconFilter(img: IconsFilters): Observable<IconsFilters> {
+
+    const url = '/assets/imgsFilters.json';
+    return this._httpClient.post<IconsFilters>(url, img);
   }
 }
