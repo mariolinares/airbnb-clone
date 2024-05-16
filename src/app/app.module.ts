@@ -15,6 +15,7 @@ import { SearchComponent } from './core/components/search/search.component';
 import { AlojamientoComponent } from './pages/alojamiento/alojamiento.component';
 import { ExperienciaOnlineComponent } from './pages/experiencia-online/experiencia-online.component';
 import { ExperienciaComponent } from './pages/experiencia/experiencia.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { ExperienciaComponent } from './pages/experiencia/experiencia.component'
     HomeComponent,
     IconsFilterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

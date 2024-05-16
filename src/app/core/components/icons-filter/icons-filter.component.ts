@@ -17,7 +17,6 @@ export class IconsFilterComponent implements OnInit {
 
   ngOnInit(): void {
     this.getIconsFilter();
-    
   }
 
   getIconsFilter() {
@@ -32,7 +31,10 @@ export class IconsFilterComponent implements OnInit {
       name: 'prueba',
       title: 'prueba',
       alt: 'prueba',
+      src: 'prueba',
     };
-    this.iconFilterService.addIconFilter(img).subscribe(res => console.log(res));
+    this.iconFilterService
+      .addIconFilter(img)
+      .subscribe((res) => console.log(res));
   }
 }

@@ -1,17 +1,19 @@
 <div class="container__icons-filter">
-  <div class="container__icons-filter-content">
+  <div
+    class="container__icons-filter-content flex flex-nowrap text-center items-center justify-center mx-8"
+  >
     <div
       *ngFor="let icon of iconsFilters; index as i"
-      class="container__icons-filter-content-icon"
+      class="container__icons-filter-content-icon flex flex-col items-center mx-8"
     >
-      <a href="/">
-        {{ icon.name }}
-
+      <a class="text-xs text-wrap hover:underline cursor-pointer">
         <img
-          src="/assets/images/img_{{ i + 1 }}.jpeg"
+          class="w-8 m-auto"
+          [src]="icon.src"
           [alt]="icon.alt"
           [title]="icon.title"
         />
+        {{ icon.name }}
       </a>
       <!-- <button (click)="addIconsFilter()">agregar imagen</button> -->
     </div>

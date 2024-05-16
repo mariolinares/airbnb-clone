@@ -2,51 +2,61 @@
   {
     "name": "Piscinas increíbles",
     "title": "Piscinas increíbles",
-    "alt": "Piscinas increíbles"
+    "alt": "Piscinas increíbles",
+    "src": "/assets/images/img_1.jpeg"
   },
   {
     "name": "Populares",
     "title": "Populares",
-    "alt": "Populares"
+    "alt": "Populares",
+    "src": "/assets/images/img_2.jpeg"
   },
   {
     "name": "Cabañas",
     "title": "Cabañas",
-    "alt": "Cabañas"
+    "alt": "Cabañas",
+    "src": "/assets/images/img_3.jpeg"
   },
   {
     "name": "Granjas",
     "title": "Granjas",
-    "alt": "Granjas"
+    "alt": "Granjas",
+    "src": "/assets/images/img_4.jpeg"
   },
   {
     "name": "Yurtas",
     "title": "Yurtas",
-    "alt": "Yurtas"
+    "alt": "Yurtas",
+    "src": "/assets/images/img_5.jpeg"
   },
   {
     "name": "A pie de Playa",
     "title": "A pie de Playa",
-    "alt": "A pie de Playa"
+    "alt": "A pie de Playa",
+    "src": "/assets/images/img_6.jpeg"
   },
   {
     "name": "En el campo",
     "title": "En el campo",
-    "alt": "En el campo"
+    "alt": "En el campo",
+    "src": "/assets/images/img_7.jpeg"
   },
   {
     "name": "Parques Nacionales",
     "title": "Parques Nacionales",
-    "alt": "Parques Nacionales"
+    "alt": "Parques Nacionales",
+    "src": "/assets/images/img_8.jpeg"
   },
   {
     "name": "Con vistas",
     "title": "Con vistas",
-    "alt": "Con vistas"
+    "alt": "Con vistas",
+    "src": "/assets/images/img_9.jpeg"
   },
   {
     "name": "Castillos",
     "title": "Castillos",
-    "alt": "Castillos"
+    "alt": "Castillos",
+    "src": "/assets/images/img_10.jpeg"
   }
 ]
